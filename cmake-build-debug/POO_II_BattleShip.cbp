@@ -80,16 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/Controller.cpp">
-			<Option target="POO_II_BattleShip"/>
-		</Unit>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/Controller.h">
-			<Option target="POO_II_BattleShip"/>
-		</Unit>
 		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/player.cpp">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
 		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/player.h">
+			<Option target="POO_II_BattleShip"/>
+		</Unit>
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/server.cpp">
+			<Option target="POO_II_BattleShip"/>
+		</Unit>
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip/server.h">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
 		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/main.cpp">

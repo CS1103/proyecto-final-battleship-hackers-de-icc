@@ -122,33 +122,6 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
-BattleShip/Controller.obj: BattleShip/Controller.cpp.obj
-
-.PHONY : BattleShip/Controller.obj
-
-# target to build an object file
-BattleShip/Controller.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.obj
-.PHONY : BattleShip/Controller.cpp.obj
-
-BattleShip/Controller.i: BattleShip/Controller.cpp.i
-
-.PHONY : BattleShip/Controller.i
-
-# target to preprocess a source file
-BattleShip/Controller.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.i
-.PHONY : BattleShip/Controller.cpp.i
-
-BattleShip/Controller.s: BattleShip/Controller.cpp.s
-
-.PHONY : BattleShip/Controller.s
-
-# target to generate assembly for a file
-BattleShip/Controller.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.s
-.PHONY : BattleShip/Controller.cpp.s
-
 BattleShip/player.obj: BattleShip/player.cpp.obj
 
 .PHONY : BattleShip/player.obj
@@ -175,6 +148,33 @@ BattleShip/player.s: BattleShip/player.cpp.s
 BattleShip/player.cpp.s:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.s
 .PHONY : BattleShip/player.cpp.s
+
+BattleShip/server.obj: BattleShip/server.cpp.obj
+
+.PHONY : BattleShip/server.obj
+
+# target to build an object file
+BattleShip/server.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.obj
+.PHONY : BattleShip/server.cpp.obj
+
+BattleShip/server.i: BattleShip/server.cpp.i
+
+.PHONY : BattleShip/server.i
+
+# target to preprocess a source file
+BattleShip/server.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.i
+.PHONY : BattleShip/server.cpp.i
+
+BattleShip/server.s: BattleShip/server.cpp.s
+
+.PHONY : BattleShip/server.s
+
+# target to generate assembly for a file
+BattleShip/server.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.s
+.PHONY : BattleShip/server.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -212,12 +212,12 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BattleShip/Controller.obj
-	@echo ... BattleShip/Controller.i
-	@echo ... BattleShip/Controller.s
 	@echo ... BattleShip/player.obj
 	@echo ... BattleShip/player.i
 	@echo ... BattleShip/player.s
+	@echo ... BattleShip/server.obj
+	@echo ... BattleShip/server.i
+	@echo ... BattleShip/server.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

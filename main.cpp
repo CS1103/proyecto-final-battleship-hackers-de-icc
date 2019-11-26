@@ -1,4 +1,4 @@
-#include "BattleShip/player.h"
+#include "BattleShip/server.h"
 
 using namespace std;
 
