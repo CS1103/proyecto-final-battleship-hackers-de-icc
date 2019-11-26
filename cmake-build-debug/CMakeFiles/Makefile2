@@ -43,10 +43,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mauri\Documents\GitHub\POO_II_BattleShip
+CMAKE_SOURCE_DIR = C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -73,14 +73,14 @@ preinstall:
 CMakeFiles/POO_II_BattleShip.dir/all:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/depend
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target POO_II_BattleShip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target POO_II_BattleShip"
 .PHONY : CMakeFiles/POO_II_BattleShip.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/POO_II_BattleShip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/POO_II_BattleShip.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/POO_II_BattleShip.dir/rule
 
 # Convenience name for target.

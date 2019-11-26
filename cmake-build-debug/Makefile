@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mauri\Documents\GitHub\POO_II_BattleShip
+CMAKE_SOURCE_DIR = C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\POO_II_BattleShip\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
+BattleShip/player.obj: BattleShip/player.cpp.obj
+
+.PHONY : BattleShip/player.obj
+
+# target to build an object file
+BattleShip/player.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.obj
+.PHONY : BattleShip/player.cpp.obj
+
+BattleShip/player.i: BattleShip/player.cpp.i
+
+.PHONY : BattleShip/player.i
+
+# target to preprocess a source file
+BattleShip/player.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.i
+.PHONY : BattleShip/player.cpp.i
+
+BattleShip/player.s: BattleShip/player.cpp.s
+
+.PHONY : BattleShip/player.s
+
+# target to generate assembly for a file
+BattleShip/player.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.s
+.PHONY : BattleShip/player.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... BattleShip/player.obj
+	@echo ... BattleShip/player.i
+	@echo ... BattleShip/player.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
