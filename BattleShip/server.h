@@ -50,12 +50,6 @@ public:
     server_t(path_t path, text_t prefix);
 
     //-Metodos
-    bool is_fleet_full();
-
-    bool is_model_full(const model_t& model);
-
-    status_t add_navy(const location_t& location, const model_t& model,
-            const orientation_t& orientation, const rectangle_t& battle_field);
 
     hit_result_t hit_navy(location_t location);
 
@@ -78,7 +72,7 @@ public:
     size_t& sequence();
 
     bool is_fleet_destroyed();
-    
+
 };
 
 #endif //BATTLESHIP_SERVER_PLAYER_H
