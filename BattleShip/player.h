@@ -3,6 +3,7 @@
 
 #include "Header.h"
 #include "server.h"
+
 struct statement_t {
     action_t action;
     text_t token;

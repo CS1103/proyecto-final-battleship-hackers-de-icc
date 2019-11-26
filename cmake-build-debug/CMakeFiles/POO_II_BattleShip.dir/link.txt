@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\POO_II_BattleShip.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\POO_II_BattleShip.dir/objects.a @CMakeFiles\POO_II_BattleShip.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\POO_II_BattleShip.dir/objects.a -Wl,--no-whole-archive  -o POO_II_BattleShip.exe -Wl,--out-implib,libPOO_II_BattleShip.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\POO_II_BattleShip.dir\linklibs.rsp
+/usr/bin/c++  -pthread -Wall -Werror -Wpedantic -Wextra -g   CMakeFiles/POO_II_BattleShip.dir/main.cpp.o CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.o CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.o  -o POO_II_BattleShip -lstdc++fs 

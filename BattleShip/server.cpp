@@ -63,19 +63,6 @@ bool navy_t::is_detroyed()
                        [](auto status) { return status.second == true; });
 }
 
-status_t server_t::can_add_navy(const model_t& model, const rectangle_t& rect, const rectangle_t& battle_field)
-{
-    if (is_model_full(model))
-        return status_t::model_full;
-    else if (is_fleet_full())
-        return status_t::fleet_full;
-    else if (is_navy_outside(rect, battle_field))
-        return status_t::outside;
-    else if (is_navy_overlap(rect))
-        return status_t::busy;
-    return status_t::ok;
-}
-
 size_t server_t::get_fleet_size() { return fleet_.size(); }
 
 server_t::server_t(path_t path, text_t prefix):

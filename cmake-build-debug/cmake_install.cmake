@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc
+# Install script for directory: /home/alonso/NeoVimProjects/UTEC/POO_II/proyecto-final-battleship-hackers-de-icc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/POO_II_BattleShip")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -40,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alonso/NeoVimProjects/UTEC/POO_II/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

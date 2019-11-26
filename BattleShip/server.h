@@ -36,7 +36,7 @@ using fleet_size_t = std::map<model_t, size_t>;
 
 class server_t {
 private:
-    // attributes
+    //-Atributos
     text_t name_;
     fleet_t fleet_;
     fleet_size_t fleet_size_;
@@ -45,28 +45,40 @@ private:
     path_t path_;
     text_t prefix_;
 
-    // methods
-    bool is_navy_outside(const rectangle_t& rect, const rectangle_t& battle_field);
-    bool is_navy_overlap(const rectangle_t& rect);
-    status_t can_add_navy(const model_t& model, const rectangle_t& rect, const rectangle_t& battle_field);
 public:
-    // constructor
+    //-Constructor
     server_t(path_t path, text_t prefix);
-    // methods
+
+    //-Metodos
     bool is_fleet_full();
+
     bool is_model_full(const model_t& model);
-    status_t add_navy(const location_t& location, const model_t& model, const orientation_t& orientation, const rectangle_t& battle_field);
+
+    status_t add_navy(const location_t& location, const model_t& model,
+            const orientation_t& orientation, const rectangle_t& battle_field);
+
     hit_result_t hit_navy(location_t location);
+
     size_t get_fleet_size();
+
     void list_fleet();
+
     size_t get_id();
+
     void set_id(size_t value);
+
     text_t get_name();
+
     void set_name(text_t value);
+
     path_t get_path();
+
     text_t get_prefix();
+
     size_t& sequence();
+
     bool is_fleet_destroyed();
+    
 };
 
 #endif //BATTLESHIP_SERVER_PLAYER_H
