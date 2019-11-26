@@ -1,13 +1,22 @@
 #ifndef Header_H
 #define Header_H
 
+#include <map>
+#include <vector>
+#include <queue>
+#include <string>
+#include <string_view>
+#include <memory>
 #include <iostream>
 #include <fstream>
 #include <algorithm>
 #include <filesystem>
-#include <iostream>
-#include <map>
-using namespace std;
+#include <numeric>
+#include <random>
+#include <sstream>
+#include <future>
+#include <optional>
+#include <regex>
 
 namespace filesystem = std::filesystem;
 using text_t = std::string;

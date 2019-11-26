@@ -1,15 +1,17 @@
 //
-// Created by mauri on 26-Nov-19.
+// Created by rudri on 11/15/2019.
 //
 
-#ifndef POO_II_BATTLESHIP_PLAYER_H
-#define POO_II_BATTLESHIP_PLAYER_H
+#ifndef BATTLESHIP_SERVER_PLAYER_H
+#define BATTLESHIP_SERVER_PLAYER_H
 
 #include "Header.h"
+
 extern std::map<model_t, model_size_t> predefined_fleet;
 
 using layout_t = std::map<location_t, bool>;
-class ship{
+
+class navy_t {
 private:
     // attributes
     location_t location_;
@@ -23,15 +25,16 @@ private:
     friend class player_t;
 public:
     // constructor
-    ship(const location_t& location, const model_t& model, const orientation_t& orientation);
+    navy_t(const location_t& location, const model_t& model, const orientation_t& orientation);
     // methods
     navy_status_t get_status();
 };
-using hit_result_t = std::pair<std::unique_ptr<ship>&, bool>;
-using fleet_t = std::vector<std::unique_ptr<ship>>;
+
+using hit_result_t = std::pair<std::unique_ptr<navy_t>&, bool>;
+using fleet_t = std::vector<std::unique_ptr<navy_t>>;
 using fleet_size_t = std::map<model_t, size_t>;
 
-class player {
+class player_t {
 private:
     // attributes
     text_t name_;
@@ -46,7 +49,24 @@ private:
     bool is_navy_outside(const rectangle_t& rect, const rectangle_t& battle_field);
     bool is_navy_overlap(const rectangle_t& rect);
     status_t can_add_navy(const model_t& model, const rectangle_t& rect, const rectangle_t& battle_field);
+public:
+    // constructor
+    player_t(path_t path, text_t prefix);
+    // methods
+    bool is_fleet_full();
+    bool is_model_full(const model_t& model);
+    status_t add_navy(const location_t& location, const model_t& model, const orientation_t& orientation, const rectangle_t& battle_field);
+    hit_result_t hit_navy(location_t location);
+    size_t get_fleet_size();
+    void list_fleet();
+    size_t get_id();
+    void set_id(size_t value);
+    text_t get_name();
+    void set_name(text_t value);
+    path_t get_path();
+    text_t get_prefix();
+    size_t& sequence();
+    bool is_fleet_destroyed();
 };
 
-
-#endif //POO_II_BATTLESHIP_PLAYER_H
+#endif //BATTLESHIP_SERVER_PLAYER_H
