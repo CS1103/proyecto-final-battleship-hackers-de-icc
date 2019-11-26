@@ -122,6 +122,33 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
+BattleShip/Controller.obj: BattleShip/Controller.cpp.obj
+
+.PHONY : BattleShip/Controller.obj
+
+# target to build an object file
+BattleShip/Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.obj
+.PHONY : BattleShip/Controller.cpp.obj
+
+BattleShip/Controller.i: BattleShip/Controller.cpp.i
+
+.PHONY : BattleShip/Controller.i
+
+# target to preprocess a source file
+BattleShip/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.i
+.PHONY : BattleShip/Controller.cpp.i
+
+BattleShip/Controller.s: BattleShip/Controller.cpp.s
+
+.PHONY : BattleShip/Controller.s
+
+# target to generate assembly for a file
+BattleShip/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/Controller.cpp.s
+.PHONY : BattleShip/Controller.cpp.s
+
 BattleShip/player.obj: BattleShip/player.cpp.obj
 
 .PHONY : BattleShip/player.obj
@@ -185,6 +212,9 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... BattleShip/Controller.obj
+	@echo ... BattleShip/Controller.i
+	@echo ... BattleShip/Controller.s
 	@echo ... BattleShip/player.obj
 	@echo ... BattleShip/player.i
 	@echo ... BattleShip/player.s
