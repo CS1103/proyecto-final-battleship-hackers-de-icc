@@ -1,7 +1,3 @@
-//
-// Created by mauri on 26-Nov-19.
-//
-
 #ifndef POO_II_BATTLESHIP_PLAYER_H
 #define POO_II_BATTLESHIP_PLAYER_H
 

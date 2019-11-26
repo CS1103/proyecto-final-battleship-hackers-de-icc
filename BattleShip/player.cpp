@@ -1,7 +1,3 @@
-//
-// Created by mauri on 26-Nov-19.
-//
-
 #include "player.h"
 void controller_t::load_tokens()
 {
