@@ -5,7 +5,7 @@ void controller_t::load_tokens()
     std::error_code e;
     while (true) {
         try {
-            filesystem::directory_iterator second_{ players_[1]->get_path() / "in" };
+            filesystem::directory_iterator first_{ server_->get_path() / "out" };
             while (first_ != end_) {
                 if (first_ != end_) {
                     statements_.push({ 0, push_statement(*first_) });
@@ -56,8 +56,11 @@ statement_t controller_t::push_statement(path_t file_name)
     std::getline(file_, line_);
     std::stringstream first_(line_);
 
-    std::string key_;
-    std::string value_;
+    std::string action_;
+    std::string status_;
+    std::string token_;
+    std::string scope_;
+    std::string message_;
     std::getline(first_, key_, '=');
     std::getline(first_, value_);
 
@@ -85,7 +88,7 @@ statement_t controller_t::push_statement(path_t file_name)
 
 void controller_t::start(statement_item_t item)
 {
-    auto& player_ = players_[item.first];
+    auto& player_   = player_[item.first];
     text_t status_;
     text_t message_;
     if (player_->get_id() != 0) {
@@ -223,7 +226,6 @@ controller_t::controller_t(size_t rows, std::string_view columns,
                            std::string_view first, std::string_view second) : rows_{rows}, columns_{columns}
 {
     players_.push_back(std::make_unique<server_t>(filesystem::current_path() / first, "FirstPlayer"));
-    players_.push_back(std::make_unique<server_t>(filesystem::current_path() / second, "SecondPlayer"));
     for (const auto& p : players_) {
         if (!filesystem::exists(p->get_path() / "in"))
             filesystem::create_directories(p->get_path() / "in");

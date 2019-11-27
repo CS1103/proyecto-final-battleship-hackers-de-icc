@@ -1,3 +1,3 @@
-/home/alonso/NeoVimProjects/UTEC/POO_II/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/alonso/NeoVimProjects/UTEC/POO_II/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir
-/home/alonso/NeoVimProjects/UTEC/POO_II/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir
+C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

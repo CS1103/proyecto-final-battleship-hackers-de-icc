@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.o"
-  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.o"
-  "CMakeFiles/POO_II_BattleShip.dir/main.cpp.o"
-  "POO_II_BattleShip"
+  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj"
+  "POO_II_BattleShip.exe"
+  "POO_II_BattleShip.exe.manifest"
   "POO_II_BattleShip.pdb"
+  "libPOO_II_BattleShip.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -7,17 +7,16 @@
 struct statement_t {
     action_t action;
     text_t token;
-    status_t status;
-    text_t parameter;
 };
 using statement_item_t = std::pair<size_t, statement_t>;
 using statement_list_t = std::queue<statement_item_t>;
 using path_list_t = std::vector<path_t>;
 using winner_t = std::optional<size_t>;
-
+using servertype = std::unique_ptr<server_t>;
 class controller_t {
     private:
         // attributes
+        servertype          server_;
         text_t              columns_;
         size_t              rows_;
         statement_list_t    statements_;
