@@ -33,27 +33,24 @@ string random_name(size_t length_first, size_t length_second) {
     return first_name + " " + second_name;
 }
 
-//position = pair<char, size_t>
-Nave random_nave() {
-    srand(time(0));
-
-    char columnas[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-    size_t filas[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    char orientacion[2] = {'H' , 'V'};
-    char flota [4] = {'A', 'B', 'S', 'T'};
-
-    Nave temp(flota[rand()%3], {columnas[rand()%9], filas[rand()%9]}, orientacion[rand()%1]);
-
-    return temp;
-}
-
-position random_attack() {
+position random_location() {
     srand(time(0));
 
     char columnas[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
     size_t filas[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     position temp = make_pair(columnas[rand()%9], filas[rand()%9]);
+
+    return temp;
+}
+
+Nave random_nave() {
+    srand(time(0));
+
+    char orientacion[2] = {'H' , 'V'};
+    char flota [4] = {'A', 'B', 'S', 'T'};
+
+    Nave temp(flota[rand()%3], random_location(), orientacion[rand()%1]);
 
     return temp;
 }
@@ -91,10 +88,10 @@ void Controller::attack(const to_send_item& item) {
     auto file_name = player->prefijo + to_string(player->sequence++) + ".in";
     ofstream file(player->path / "in"s / file_name);
 
-    auto temp_nave = random_nave();
+    auto temp_attack = random_location();
 
     file << tk << player->token << '\n';
-    file << action << temp_nave.posicion.first << temp_nave.posicion.second << '\n';
+    file << action << temp_attack.first << temp_attack.second << '\n';
 }
 
 /*void Player::Recibir() {
