@@ -125,59 +125,59 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
-BattleShip/player.obj: BattleShip/player.cpp.obj
+BattleShip_Pruebas/player.obj: BattleShip_Pruebas/player.cpp.obj
 
-.PHONY : BattleShip/player.obj
-
-# target to build an object file
-BattleShip/player.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.obj
-.PHONY : BattleShip/player.cpp.obj
-
-BattleShip/player.i: BattleShip/player.cpp.i
-
-.PHONY : BattleShip/player.i
-
-# target to preprocess a source file
-BattleShip/player.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.i
-.PHONY : BattleShip/player.cpp.i
-
-BattleShip/player.s: BattleShip/player.cpp.s
-
-.PHONY : BattleShip/player.s
-
-# target to generate assembly for a file
-BattleShip/player.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.s
-.PHONY : BattleShip/player.cpp.s
-
-BattleShip/server.obj: BattleShip/server.cpp.obj
-
-.PHONY : BattleShip/server.obj
+.PHONY : BattleShip_Pruebas/player.obj
 
 # target to build an object file
-BattleShip/server.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.obj
-.PHONY : BattleShip/server.cpp.obj
+BattleShip_Pruebas/player.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj
+.PHONY : BattleShip_Pruebas/player.cpp.obj
 
-BattleShip/server.i: BattleShip/server.cpp.i
+BattleShip_Pruebas/player.i: BattleShip_Pruebas/player.cpp.i
 
-.PHONY : BattleShip/server.i
+.PHONY : BattleShip_Pruebas/player.i
 
 # target to preprocess a source file
-BattleShip/server.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.i
-.PHONY : BattleShip/server.cpp.i
+BattleShip_Pruebas/player.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.i
+.PHONY : BattleShip_Pruebas/player.cpp.i
 
-BattleShip/server.s: BattleShip/server.cpp.s
+BattleShip_Pruebas/player.s: BattleShip_Pruebas/player.cpp.s
 
-.PHONY : BattleShip/server.s
+.PHONY : BattleShip_Pruebas/player.s
 
 # target to generate assembly for a file
-BattleShip/server.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.s
-.PHONY : BattleShip/server.cpp.s
+BattleShip_Pruebas/player.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.s
+.PHONY : BattleShip_Pruebas/player.cpp.s
+
+BattleShip_Pruebas/server.obj: BattleShip_Pruebas/server.cpp.obj
+
+.PHONY : BattleShip_Pruebas/server.obj
+
+# target to build an object file
+BattleShip_Pruebas/server.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj
+.PHONY : BattleShip_Pruebas/server.cpp.obj
+
+BattleShip_Pruebas/server.i: BattleShip_Pruebas/server.cpp.i
+
+.PHONY : BattleShip_Pruebas/server.i
+
+# target to preprocess a source file
+BattleShip_Pruebas/server.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.i
+.PHONY : BattleShip_Pruebas/server.cpp.i
+
+BattleShip_Pruebas/server.s: BattleShip_Pruebas/server.cpp.s
+
+.PHONY : BattleShip_Pruebas/server.s
+
+# target to generate assembly for a file
+BattleShip_Pruebas/server.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.s
+.PHONY : BattleShip_Pruebas/server.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -215,12 +215,12 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BattleShip/player.obj
-	@echo ... BattleShip/player.i
-	@echo ... BattleShip/player.s
-	@echo ... BattleShip/server.obj
-	@echo ... BattleShip/server.i
-	@echo ... BattleShip/server.s
+	@echo ... BattleShip_Pruebas/player.obj
+	@echo ... BattleShip_Pruebas/player.i
+	@echo ... BattleShip_Pruebas/player.s
+	@echo ... BattleShip_Pruebas/server.obj
+	@echo ... BattleShip_Pruebas/server.i
+	@echo ... BattleShip_Pruebas/server.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

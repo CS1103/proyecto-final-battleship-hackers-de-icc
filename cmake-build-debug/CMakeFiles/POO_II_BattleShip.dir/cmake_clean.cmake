@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/player.cpp.obj"
-  "CMakeFiles/POO_II_BattleShip.dir/BattleShip/server.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj"
   "CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj"
   "POO_II_BattleShip.exe"
   "POO_II_BattleShip.exe.manifest"

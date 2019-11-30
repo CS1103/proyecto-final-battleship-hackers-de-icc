@@ -56,25 +56,39 @@ statement_t player_t::push_statement(path_t file_name)
     std::getline(file_, line_);
     std::stringstream first_(line_);
 
-    std::string action_;
-    std::string token_;
-
-    std::getline(first_, key_, '=');
-    std::getline(first_, value_);
-
+    std::string key_;
+    std::string value_;
+    std::getline(first_, key_);
     statement_t result;
     if (key_ == "HANDSHAKE") {
-        result.action = action_t::start;
-        result.parameter = value_;
-        result.status = status_t::ok;
-    }
-    else if (key_ == "TOKEN") {
-        result.token = value_;
         std::getline(file_, line_);
         std::stringstream first_(line_);
         std::getline(first_, key_, '=');
         std::getline(first_, value_);
-        if (key_ == "PLACEFLEET")
+        if (value_ == "ACCEPTED"){
+        result.token = server_->get_token();
+
+        result.action = action_t::build;
+        }
+    }
+    else if (key_ == "PLACEFEET") {
+        std::getline(file_, line_);
+        std::stringstream first_(line_);
+        std::getline(first_, key_, '=');
+        std::getline(first_, value_);
+        if (value_ == "ACCEPTED")
+            result.action = action_t::build;
+        else if (key_ == "ATTACK")
+            result.action = action_t::attack;
+        result.status = status_t::ok;
+        result.parameter = value_;
+    }
+    else if (key_ == "PLACEFEET") {
+        std::getline(file_, line_);
+        std::stringstream first_(line_);
+        std::getline(first_, key_, '=');
+        std::getline(first_, value_);
+        if (value_ == "ACCEPTED")
             result.action = action_t::build;
         else if (key_ == "ATTACK")
             result.action = action_t::attack;
