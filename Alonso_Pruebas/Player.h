@@ -3,10 +3,9 @@
 
 #include"Nave.h"
 
-struct to_send {
-    string identify;
+struct statement {
+    string token;
     string action;
-    string parameter;
 };
 
 struct Player {
@@ -19,16 +18,16 @@ struct Player {
     Player(const fs::path& path_, const string& prefijo_);
 };
 
-using to_send_item = pair<size_t, to_send>;
+using statement_item = pair<size_t, statement>;
 
 class Controller {
     char columnas;
     size_t filas;
     vector<unique_ptr<Player>> players;
 
-    void start(const to_send_item& item);
-    void build(const to_send_item& item);
-    void attack(const to_send_item& item);
+    void start(const statement_item& item);
+    void build(const statement_item& item);
+    void attack(const statement_item& item);
 
 public:
     Controller(string first, string second);

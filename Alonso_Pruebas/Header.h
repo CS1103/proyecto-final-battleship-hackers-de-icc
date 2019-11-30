@@ -11,9 +11,6 @@
 #include<utility>
 #include<experimental/filesystem>
 
-#include<boost/algorithm/string.hpp>
-#include<boost/algorithm/string/split.hpp>
-
 using namespace std;
 
 namespace fs = experimental::filesystem;
