@@ -26,13 +26,12 @@ class Controller {
     size_t filas;
     vector<unique_ptr<Player>> players;
 
-    void start(const string& name, const to_send_item& item);
+    void start(const to_send_item& item);
     void build(const to_send_item& item);
     void attack(const to_send_item& item);
 
 public:
     Controller(string first, string second);
-    
     
 };
 

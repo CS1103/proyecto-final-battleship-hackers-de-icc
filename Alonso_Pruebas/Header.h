@@ -2,6 +2,8 @@
 #define Header_H
 
 #include<iostream>
+#include<stdlib.h>
+#include<time.h>
 #include<vector>
 #include<fstream>
 #include<string>
