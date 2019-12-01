@@ -97,6 +97,10 @@ public:
 ```
 g++ -lpthread *cpp -std=c++17 -lstdc++fs
 ```
+## Conclusiones del proyecto
+- Nos encontramos con dificultades al momento de entender los requerimientos para el problema.
+- Nuestro programa se basó en el código que  se nos fue entregado, a fin de no empezar de cero.
+- La falta de tiempo no permitió implementar una mejor lógica para el ataque, restringiéndonos a atacar de forma aleatoria.
 
 ## Hackers de ICC
 
