@@ -127,15 +127,15 @@ statement push_statement(const fs::path& file_name) {
 }
 void player::load_tokens()
 {
-    auto end_ = filesystem::directory_iterator{};
+    auto end_ = fs::directory_iterator{};
     std::error_code e;
     while (true) {
         try {
-            filesystem::directory_iterator first_{server->path / "out" };
+            fs::directory_iterator first_{server->path / "out" };
             while (first_ != end_) {
                 if (first_ != end_) {
                     statements_.push({ 0, push_statement(*first_) });
-                    filesystem::remove(*first_++, e);
+                    fs::remove(*first_++, e);
                     if (e)
                         std::cerr << e.message() << "\n";
                 }
@@ -146,7 +146,7 @@ void player::load_tokens()
     }
 }
 void player::save_tokens() {
-    auto end_ = filesystem::directory_iterator{};
+    auto end_ = fs::directory_iterator{};
     while (true) {
         try {
             while (!statements_.empty()) {
