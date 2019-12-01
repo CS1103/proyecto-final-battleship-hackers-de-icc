@@ -7,17 +7,17 @@
 
 
 # El Proyecto battleship implementa una comunicación entre el jugador y el servidor. 
-Nuestro programa lee los archivos que nos envía el servidor y el servidor lee los nuestros. Mediante algo similar 
-a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protocolo y status.
-## *Las clases o archivos con los que contamos son*
-1. Flota
-2. Nave
-3. Controller 
-4. Player 
+Nuestro programa lee los archivos que nos envía el servidor y el servidor lee los nuestros. Mediante algo similar a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protocolo y status.
+
+## Las clases o archivos con los que contamos son
+1. Nave
+  1.1 Flota
+2. Controller 
+3. Player 
 
 ### Donde
-La clase nave(Que de hecho podria ser un struct) que contiene la orientacion y la posicion(pair) de la nave que vayamos a escoger,
-al igual que su respectivo id.
+La clase nave que contiene la orientacion y la posicion de la nave que vayamos a escoger, al igual que el tipo de nave.
+
 ```c++
 class Nave {
 public:
@@ -28,18 +28,21 @@ public:
     Nave(size_t id, position posicion, char orientacion);
 };
 ```
+
 El archivo flota.h contiene las clases hijas de la clase nave. Estas clases son las naves especificas que usara el programa
 para posicionarlas en el tablero y comenzar a jugar 
+
 ```c++
 class Aircraft_carrier : public Nave {
 public:
     Aircraft_carrier(size_t id, position posicion, char orientacion); 
 };
 ```
+
 *ejemplo de clase heredada -> Aircraft_carrier.* 
 
 Las clase controller nos permite así mismo hacer unas abstracción sobre 
-lo que necesitamos hacer. Sin embargo, **la clase más importante es la clase player**
+lo que necesitamos hacer. Sin embargo, **la clase más importante es la clase player**.
 
 ```c++
 class player {
@@ -56,6 +59,7 @@ public:
     void save_tokens();
 };
 ```
+
 Esta clase realiza
 - [x] Leída de archivos guardados por el servidor
 - [x] Asignación de acciones a tomar
@@ -70,8 +74,7 @@ Se apoya de las funciones globales en el archivo
 
 ### La función global de mayor importancia es push_statement
 Es esta función la que permite al player tomar las acciones ya
-mencionadas en base 
-a los datos obtenidos del server
+mencionadas en base a los datos obtenidos del server.
 
 
 

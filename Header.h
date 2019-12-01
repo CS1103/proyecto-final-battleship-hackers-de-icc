@@ -8,12 +8,13 @@
 #include<fstream>
 #include<string>
 #include<queue>
+#include<future>
 #include<utility>
-#include<filesystem>
-#include <future>
+#include<experimental/filesystem>
+
 using namespace std;
 
-namespace fs = filesystem;
+namespace fs = experimental::filesystem;
 using position = pair<char, size_t>;
 
 #endif //Header_H

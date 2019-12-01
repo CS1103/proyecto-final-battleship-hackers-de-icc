@@ -1,10 +1,9 @@
-#include "Alonso_Pruebas/Controller.h"
-
-using namespace std;
+#include "Player.h"
 
 int main() {
-    Controller *con= new Controller("hola");
-    con->execute();
-    delete con;
+    Controller con("first", "second");
+
+    con.execute();
+
     return 0;
 }
