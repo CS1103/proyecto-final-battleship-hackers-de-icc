@@ -66,7 +66,7 @@ Se apoya de las funciones globales en el archivo
 * random_location -- Genera una posicion aleatoria
 * random_nave -- Genera una nave con una posicion aleatoria
 
-####La función global de mayor importancia es push_statement
+###La función global de mayor importancia es push_statement
 Es esta función la que permite al player tomar las acciones ya
 mencionadas en base 
 a los datos obtenidos del server
