@@ -72,18 +72,18 @@ CMakeFiles/POO_II_BattleShip.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_II_BattleShip.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\main.cpp -o CMakeFiles\POO_II_BattleShip.dir\main.cpp.s
 
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj: CMakeFiles/POO_II_BattleShip.dir/flags.make
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj: ../BattleShip_Pruebas/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_II_BattleShip.dir\BattleShip_Pruebas\player.cpp.obj -c C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\BattleShip_Pruebas\player.cpp
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj: CMakeFiles/POO_II_BattleShip.dir/flags.make
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj: ../Alonso_Pruebas/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_II_BattleShip.dir\Alonso_Pruebas\Player.cpp.obj -c C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\Alonso_Pruebas\Player.cpp
 
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\BattleShip_Pruebas\player.cpp > CMakeFiles\POO_II_BattleShip.dir\BattleShip_Pruebas\player.cpp.i
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\Alonso_Pruebas\Player.cpp > CMakeFiles\POO_II_BattleShip.dir\Alonso_Pruebas\Player.cpp.i
 
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\BattleShip_Pruebas\player.cpp -o CMakeFiles\POO_II_BattleShip.dir\BattleShip_Pruebas\player.cpp.s
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mauri\Documents\GitHub\proyecto-final-battleship-hackers-de-icc\Alonso_Pruebas\Player.cpp -o CMakeFiles\POO_II_BattleShip.dir\Alonso_Pruebas\Player.cpp.s
 
 CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj: CMakeFiles/POO_II_BattleShip.dir/flags.make
 CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj: ../BattleShip_Pruebas/server.cpp
@@ -101,14 +101,14 @@ CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.s: cmake_force
 # Object files for target POO_II_BattleShip
 POO_II_BattleShip_OBJECTS = \
 "CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj" \
-"CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj" \
+"CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj" \
 "CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj"
 
 # External object files for target POO_II_BattleShip
 POO_II_BattleShip_EXTERNAL_OBJECTS =
 
 POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj
-POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj
+POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj
 POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj
 POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/build.make
 POO_II_BattleShip.exe: CMakeFiles/POO_II_BattleShip.dir/linklibs.rsp

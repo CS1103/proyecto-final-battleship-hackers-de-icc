@@ -125,32 +125,32 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
-BattleShip_Pruebas/player.obj: BattleShip_Pruebas/player.cpp.obj
+Alonso_Pruebas/Player.obj: Alonso_Pruebas/Player.cpp.obj
 
-.PHONY : BattleShip_Pruebas/player.obj
+.PHONY : Alonso_Pruebas/Player.obj
 
 # target to build an object file
-BattleShip_Pruebas/player.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.obj
-.PHONY : BattleShip_Pruebas/player.cpp.obj
+Alonso_Pruebas/Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj
+.PHONY : Alonso_Pruebas/Player.cpp.obj
 
-BattleShip_Pruebas/player.i: BattleShip_Pruebas/player.cpp.i
+Alonso_Pruebas/Player.i: Alonso_Pruebas/Player.cpp.i
 
-.PHONY : BattleShip_Pruebas/player.i
+.PHONY : Alonso_Pruebas/Player.i
 
 # target to preprocess a source file
-BattleShip_Pruebas/player.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.i
-.PHONY : BattleShip_Pruebas/player.cpp.i
+Alonso_Pruebas/Player.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.i
+.PHONY : Alonso_Pruebas/Player.cpp.i
 
-BattleShip_Pruebas/player.s: BattleShip_Pruebas/player.cpp.s
+Alonso_Pruebas/Player.s: Alonso_Pruebas/Player.cpp.s
 
-.PHONY : BattleShip_Pruebas/player.s
+.PHONY : Alonso_Pruebas/Player.s
 
 # target to generate assembly for a file
-BattleShip_Pruebas/player.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/player.cpp.s
-.PHONY : BattleShip_Pruebas/player.cpp.s
+Alonso_Pruebas/Player.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.s
+.PHONY : Alonso_Pruebas/Player.cpp.s
 
 BattleShip_Pruebas/server.obj: BattleShip_Pruebas/server.cpp.obj
 
@@ -215,9 +215,9 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BattleShip_Pruebas/player.obj
-	@echo ... BattleShip_Pruebas/player.i
-	@echo ... BattleShip_Pruebas/player.s
+	@echo ... Alonso_Pruebas/Player.obj
+	@echo ... Alonso_Pruebas/Player.i
+	@echo ... Alonso_Pruebas/Player.s
 	@echo ... BattleShip_Pruebas/server.obj
 	@echo ... BattleShip_Pruebas/server.i
 	@echo ... BattleShip_Pruebas/server.s

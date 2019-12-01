@@ -4,16 +4,11 @@ Player::Player(const fs::path& path_, const string& prefijo_) :
     path{path_}, prefijo{prefijo_} {}
 
 Controller::Controller(string first, string second) : columnas{'J'}, filas{10} {
-    players.push_back(make_unique<Player>(fs::current_path() / first, "FirstPlayer")); 
-    players.push_back(make_unique<Player>(fs::current_path() / second, "SecondPlayer")); 
+    make_unique<Player>(fs::current_path() / first, "Server");
 
-    for(const auto& player : players) {
-        if(!fs::exists(player->path / "in"))
-            fs::create_directories(player->path / "in");
+        if(!fs::exists(players->path / "in"))
+            fs::create_directories(players->path / "in");
 
-        if(!fs::exists(player->path / "out"))
-            fs::create_directories(player->path / "out");
-    }
 }
 
 string random_name(size_t length_first, size_t length_second) {
@@ -56,7 +51,7 @@ Nave random_nave() {
 }
 
 void Controller::start(const statement_item& item) {
-    auto& player = players[item.first];
+    auto& player = players;
     string action = "HANDSHAKE=";
     string nombre = random_name(5, 5);
 
@@ -67,7 +62,7 @@ void Controller::start(const statement_item& item) {
 }
 
 void Controller::build(const statement_item& item) {
-    auto& player = players[item.first];
+    auto& player = players;
     string tk = "TOKEN=";
     string action = "PLACEFLEET=";
 
@@ -81,7 +76,7 @@ void Controller::build(const statement_item& item) {
 }
 
 void Controller::attack(const statement_item& item) {
-    auto& player = players[item.first];
+    auto& player = players;
     string tk = "TOKEN=";
     string action = "ATTACK=";
     

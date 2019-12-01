@@ -23,7 +23,7 @@ using statement_item = pair<size_t, statement>;
 class Controller {
     char columnas;
     size_t filas;
-    vector<unique_ptr<Player>> players;
+    unique_ptr<Player> players;
 
     void start(const statement_item& item);
     void build(const statement_item& item);

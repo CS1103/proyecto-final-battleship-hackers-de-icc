@@ -9,11 +9,11 @@
 #include<string>
 #include<queue>
 #include<utility>
-#include<experimental/filesystem>
+#include<filesystem>
 
 using namespace std;
 
-namespace fs = experimental::filesystem;
+namespace fs = filesystem;
 using position = pair<char, size_t>;
 
 #endif //Header_H
