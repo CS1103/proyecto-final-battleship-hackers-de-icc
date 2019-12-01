@@ -25,15 +25,14 @@ class Controller {
     char columnas;
     size_t filas;
     unique_ptr<Player> players;
-    void load_tokens();
-    void save_tokens();
     void start(const statement_item& item);
     void build(const statement_item& item);
     void attack(const statement_item& item);
-
 public:
-    Controller(string first, string second);
-    
+    Controller(string first);
+    void execute();
+    void load_tokens();
+    void save_tokens();
 };
 
 

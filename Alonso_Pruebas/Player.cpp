@@ -3,7 +3,7 @@
 Player::Player(const fs::path& path_, const string& prefijo_) :
     path{path_}, prefijo{prefijo_} {}
 
-Controller::Controller(string first, string second) : columnas{'J'}, filas{10} {
+Controller::Controller(string first) : columnas{'J'}, filas{10} {
     make_unique<Player>(fs::current_path() / first, "Server");
 
         if(!fs::exists(players->path / "in"))
@@ -203,6 +203,11 @@ void Controller::attack(const statement_item& item) {
 
     file << tk << player->token << '\n';
     file << action << temp_attack.first << temp_attack.second << '\n';
+}
+void Controller::execute()
+{
+    auto load_ = std::async([&] { load_tokens(); });
+    auto save_ = std::async([&] { save_tokens(); });
 }
 
 
