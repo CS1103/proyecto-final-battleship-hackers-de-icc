@@ -4,9 +4,16 @@ Player::Player(const fs::path& path_, const string& prefijo_) :
     path{path_}, prefijo{prefijo_} {}
 
 Controller::Controller(string first, string second) : columnas{'J'}, filas{10} {
-    make_unique<Player>(fs::current_path() / first, "FirstPlayer");
-    if(!fs::exists(players->path / "in"))
-        fs::create_directories(players->path / "in");
+    players.push_back(make_unique<Player>(fs::current_path() / first, "FirstPlayer")); 
+    players.push_back(make_unique<Player>(fs::current_path() / second, "SecondPlayer")); 
+
+    for(const auto& player : players) {
+        if(!fs::exists(player->path / "in"))
+            fs::create_directories(player->path / "in");
+
+        if(!fs::exists(player->path / "out"))
+            fs::create_directories(player->path / "out");
+    }
 }
 
 string random_name(size_t length_first, size_t length_second) {
@@ -48,13 +55,8 @@ Nave random_nave() {
     return temp;
 }
 
-<<<<<<< HEAD
-void Controller::start(const to_send_item& item) {
-    auto& player = players;
-=======
 void Controller::start(const statement_item& item) {
     auto& player = players[item.first];
->>>>>>> 1d3950f7dfe69a78228209268f4609b8465d7542
     string action = "HANDSHAKE=";
     string nombre = random_name(5, 5);
 
@@ -64,13 +66,8 @@ void Controller::start(const statement_item& item) {
     file << action << nombre << '\n';
 }
 
-<<<<<<< HEAD
-void Controller::build(const to_send_item& item) {
-    auto& player = players;
-=======
 void Controller::build(const statement_item& item) {
     auto& player = players[item.first];
->>>>>>> 1d3950f7dfe69a78228209268f4609b8465d7542
     string tk = "TOKEN=";
     string action = "PLACEFLEET=";
 
@@ -83,13 +80,8 @@ void Controller::build(const statement_item& item) {
     file << action << temp_nave.id << '-' <<  temp_nave.posicion.first << temp_nave.posicion.second << '-' << temp_nave.orientacion << '\n';
 }
 
-<<<<<<< HEAD
-void Controller::attack(const to_send_item& item) {
-    auto& player = players;
-=======
 void Controller::attack(const statement_item& item) {
     auto& player = players[item.first];
->>>>>>> 1d3950f7dfe69a78228209268f4609b8465d7542
     string tk = "TOKEN=";
     string action = "ATTACK=";
     
@@ -190,3 +182,11 @@ statement push_statement(const fs::path& file_name) {
 
     return result;
 }
+
+
+
+
+
+
+
+
