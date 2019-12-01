@@ -49,6 +49,92 @@ Nave random_nave() {
 
     return temp;
 }
+statement push_statement(const fs::path& file_name) {
+    ifstream file(file_name.generic_string());
+
+    if(!file.is_open())
+        throw runtime_error("no open");
+
+    string line;
+    getline(file, line, '\n');
+    stringstream first(line);
+
+    string action;
+    getline(first, action, '\n');
+
+    statement result {};
+
+    string key_status, key_message;
+    string value_status, value_message;
+
+    if(action == "HANDSHAKE") {
+        getline(file, line, '\n');
+        stringstream second(line);
+
+        getline(second, key_status, '=');
+        getline(second, value_status, '\n');
+
+        if(value_status == "ACCEPTED") {
+            getline(second, key_message, '=');
+            getline(second, value_message, '\n');
+
+            result.token = value_message;
+            result.action = "build";
+        }
+
+        else if(value_status == "REJECTED")
+            result.action = "start";
+    }
+
+    else if(action == "PLACEFLEET") {
+        getline(file, line, '\n');
+        stringstream second(line);
+
+        getline(second, key_status, '=');
+        getline(second, value_status, '\n');
+
+        if(value_status == "ACCEPTED") {
+            getline(second, key_message, '=');
+            getline(second, value_message, '\n');
+
+            if(value_message == "FULL")
+                result.action = "attack";
+
+            else
+                result.action = "build";
+        }
+
+        else if(value_status == "REJECTED")
+            result.action = "build";
+    }
+
+    else if(action == "ATTACK") {
+        getline(file, line, '\n');
+        stringstream second(line);
+
+        getline(second, key_status, '=');
+        getline(second, value_status, '\n');
+
+        if(value_status == "ACCEPTED") {
+            getline(second, key_message, '=');
+            getline(second, value_message, '\n');
+
+            if(value_message == "FAILED" || value_message == "DAMAGED" || value_message == "DESTROYED")
+                result.action = "attack";
+
+            else if(value_message == "WINNER")
+                result.action = "win";
+
+            else if(value_message == "GAMEOVER")
+                result.action = "lose";
+
+        }
+
+        else if(value_status == "REJECTED")
+            result.action = "attack";
+
+    }
+
 void Controller::load_tokens()
 {
     auto end_ = filesystem::directory_iterator{};
@@ -108,91 +194,6 @@ void Controller::attack(const statement_item& item) {
     file << action << temp_attack.first << temp_attack.second << '\n';
 }
 
-statement push_statement(const fs::path& file_name) {
-    ifstream file(file_name.generic_string());
-
-    if(!file.is_open())
-        throw runtime_error("no open");
-
-    string line;
-    getline(file, line, '\n');
-    stringstream first(line);
-
-    string action;
-    getline(first, action, '\n');
-
-    statement result {};
-
-    string key_status, key_message;
-    string value_status, value_message;
-
-    if(action == "HANDSHAKE") {
-        getline(file, line, '\n'); 
-        stringstream second(line);
-
-        getline(second, key_status, '=');
-        getline(second, value_status, '\n');
-
-        if(value_status == "ACCEPTED") {
-            getline(second, key_message, '=');
-            getline(second, value_message, '\n');
-
-            result.token = value_message;
-            result.action = "build";
-        }
-                
-        else if(value_status == "REJECTED")
-            result.action = "start";
-    }
-
-    else if(action == "PLACEFLEET") {
-        getline(file, line, '\n'); 
-        stringstream second(line);
-
-        getline(second, key_status, '=');
-        getline(second, value_status, '\n');
-
-        if(value_status == "ACCEPTED") {
-            getline(second, key_message, '=');
-            getline(second, value_message, '\n');
-
-            if(value_message == "FULL")
-                result.action = "attack";
-
-            else
-                result.action = "build";
-        }
-                
-        else if(value_status == "REJECTED")
-            result.action = "build";
-    }
-
-    else if(action == "ATTACK") {
-        getline(file, line, '\n'); 
-        stringstream second(line);
-
-        getline(second, key_status, '=');
-        getline(second, value_status, '\n');
-
-        if(value_status == "ACCEPTED") {
-            getline(second, key_message, '=');
-            getline(second, value_message, '\n');
-
-            if(value_message == "FAILED" || value_message == "DAMAGED" || value_message == "DESTROYED")
-                result.action = "attack";
-
-            else if(value_message == "WINNER")
-                result.action = "win";
-
-            else if(value_message == "GAMEOVER")
-                result.action = "lose";
-
-        }
-                
-        else if(value_status == "REJECTED")
-            result.action = "attack";
-
-    }
 
     return result;
 }
