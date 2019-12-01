@@ -49,7 +49,26 @@ Nave random_nave() {
 
     return temp;
 }
-
+void Controller::load_tokens()
+{
+    auto end_ = filesystem::directory_iterator{};
+    std::error_code e;
+    while (true) {
+        try {
+            filesystem::directory_iterator first_{ players->get_path() / "out" };
+            while (first_ != end_) {
+                if (first_ != end_) {
+                    statements_.push({ 0, push_statement(*first_) });
+                    filesystem::remove(*first_++, e);
+                    if (e)
+                        std::cerr << e.message() << "\n";
+                }
+            }
+        }
+        catch (...) {
+        }
+    }
+}
 void Controller::start(const statement_item& item) {
     auto& player = players;
     string action = "HANDSHAKE=";
