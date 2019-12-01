@@ -153,7 +153,13 @@ void Controller::save_tokens()
             while (!statements_.empty()) {
                 auto item_ = statements_.front();
                 statements_.pop();
-                switch (item_.second.action) {
+                if(item_.second.action == "start")
+                    start(item_);
+                else if(item_.second.action == "build")
+                    build(item_);
+                else if(item_.second.action == "attack")
+                    attack(item_);
+                /*switch (item_.second.action) {
                     case "start":
                         start(item_);
                         break;
@@ -163,7 +169,7 @@ void Controller::save_tokens()
                     case "attack":
                         attack(item_);
                         break;
-                }
+                }*/
             }
         }
         catch (...) {
