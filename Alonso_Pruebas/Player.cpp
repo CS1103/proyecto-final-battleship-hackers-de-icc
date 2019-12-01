@@ -145,31 +145,21 @@ void Controller::load_tokens()
         }
     }
 }
-void Controller::save_tokens()
-{
+void Controller::save_tokens() {
     auto end_ = filesystem::directory_iterator{};
     while (true) {
         try {
             while (!statements_.empty()) {
                 auto item_ = statements_.front();
                 statements_.pop();
-                if(item_.second.action == "start")
+                if (item_.second.action == "start")
                     start(item_);
-                else if(item_.second.action == "build")
+                else if (item_.second.action == "build")
                     build(item_);
-                else if(item_.second.action == "attack")
+                else if (item_.second.action == "attack")
                     attack(item_);
-                /*switch (item_.second.action) {
-                    case "start":
-                        start(item_);
-                        break;
-                    case "build":
-                        build(item_);
-                        break;
-                    case "attack":
-                        attack(item_);
-                        break;
-                }*/
+                else if (item_.second.action== "lose" || item_.second.action=="win")
+                    break;
             }
         }
         catch (...) {
@@ -216,8 +206,6 @@ void Controller::attack(const statement_item& item) {
 }
 
 
-    return result;
-}
 
 
 
