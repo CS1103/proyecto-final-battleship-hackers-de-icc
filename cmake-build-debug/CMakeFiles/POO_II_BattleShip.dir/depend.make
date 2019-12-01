@@ -6,12 +6,8 @@ CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj: ../Alonso_Prueba
 CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj: ../Alonso_Pruebas/Player.cpp
 CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj: ../Alonso_Pruebas/Player.h
 
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj: ../BattleShip_Pruebas/Header.h
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj: ../BattleShip_Pruebas/server.cpp
-CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj: ../BattleShip_Pruebas/server.h
-
-CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj: ../Alonso_Pruebas/Header.h
-CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj: ../Alonso_Pruebas/Nave.h
-CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj: ../Alonso_Pruebas/Player.h
-CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj: ../Alonso_Pruebas/Header.h
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj: ../Alonso_Pruebas/Nave.h
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj: ../Alonso_Pruebas/Player.h
+CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj: ../Alonso_Pruebas/main.cpp
 

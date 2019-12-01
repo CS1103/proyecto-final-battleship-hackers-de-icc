@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Player.cpp" "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj"
-  "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip_Pruebas/server.cpp" "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj"
-  "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/main.cpp" "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj"
+  "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Controller.cpp" "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Controller.cpp.obj"
+  "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/main.cpp" "C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/cmake-build-debug/CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

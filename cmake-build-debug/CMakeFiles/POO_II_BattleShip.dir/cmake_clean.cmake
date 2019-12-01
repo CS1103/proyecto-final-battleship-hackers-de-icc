@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj"
-  "CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj"
-  "CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Controller.cpp.obj"
+  "CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj"
   "POO_II_BattleShip.exe"
   "POO_II_BattleShip.exe.manifest"
   "POO_II_BattleShip.pdb"

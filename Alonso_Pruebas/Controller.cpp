@@ -1,13 +1,13 @@
-#include"Player.h"
+#include"Controller.h"
 
-Player::Player(const fs::path& path_, const string& prefijo_) :
+Controller::Controller(const fs::path& path_, const string& prefijo_) :
     path{path_}, prefijo{prefijo_} {}
 
-Controller::Controller(string first) : columnas{'J'}, filas{10} {
-    make_unique<Player>(fs::current_path() / first, "Server");
+player::player(string first) : columnas{'J'}, filas{10} {
+    make_unique<Controller>(fs::current_path() / first, "Server");
 
-        if(!fs::exists(players->path / "in"))
-            fs::create_directories(players->path / "in");
+        if(!fs::exists(server->path / "in"))
+            fs::create_directories(server->path / "in");
 
 }
 
@@ -125,13 +125,13 @@ statement push_statement(const fs::path& file_name) {
 
     }
 }
-void Controller::load_tokens()
+void player::load_tokens()
 {
     auto end_ = filesystem::directory_iterator{};
     std::error_code e;
     while (true) {
         try {
-            filesystem::directory_iterator first_{ players->path / "out" };
+            filesystem::directory_iterator first_{server->path / "out" };
             while (first_ != end_) {
                 if (first_ != end_) {
                     statements_.push({ 0, push_statement(*first_) });
@@ -145,7 +145,7 @@ void Controller::load_tokens()
         }
     }
 }
-void Controller::save_tokens() {
+void player::save_tokens() {
     auto end_ = filesystem::directory_iterator{};
     while (true) {
         try {
@@ -166,8 +166,8 @@ void Controller::save_tokens() {
         }
     }
 }
-void Controller::start(const statement_item& item) {
-    auto& player = players;
+void player::start(const statement_item& item) {
+    auto& player = server;
     string action = "HANDSHAKE=";
     string nombre = random_name(5, 5);
 
@@ -177,8 +177,8 @@ void Controller::start(const statement_item& item) {
     file << action << nombre << '\n';
 }
 
-void Controller::build(const statement_item& item) {
-    auto& player = players;
+void player::build(const statement_item& item) {
+    auto& player = server;
     string tk = "TOKEN=";
     string action = "PLACEFLEET=";
 
@@ -191,8 +191,8 @@ void Controller::build(const statement_item& item) {
     file << action << temp_nave.id << '-' <<  temp_nave.posicion.first << temp_nave.posicion.second << '-' << temp_nave.orientacion << '\n';
 }
 
-void Controller::attack(const statement_item& item) {
-    auto& player = players;
+void player::attack(const statement_item& item) {
+    auto& player = server;
     string tk = "TOKEN=";
     string action = "ATTACK=";
     
@@ -204,7 +204,7 @@ void Controller::attack(const statement_item& item) {
     file << tk << player->token << '\n';
     file << action << temp_attack.first << temp_attack.second << '\n';
 }
-void Controller::execute()
+void player::execute()
 {
     auto load_ = std::async([&] { load_tokens(); });
     auto save_ = std::async([&] { save_tokens(); });

@@ -1,4 +1,4 @@
-#include "Alonso_Pruebas/Player.h"
+#include "Alonso_Pruebas/Controller.h"
 
 using namespace std;
 

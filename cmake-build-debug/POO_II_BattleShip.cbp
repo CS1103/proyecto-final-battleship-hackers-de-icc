@@ -80,19 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Player.cpp">
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Controller.cpp">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Player.h">
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Controller.h">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip_Pruebas/server.cpp">
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/Header.h">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/BattleShip_Pruebas/server.h">
-			<Option target="POO_II_BattleShip"/>
-		</Unit>
-		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/main.cpp">
+		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/Alonso_Pruebas/main.cpp">
 			<Option target="POO_II_BattleShip"/>
 		</Unit>
 		<Unit filename="C:/Users/mauri/Documents/GitHub/proyecto-final-battleship-hackers-de-icc/CMakeLists.txt">

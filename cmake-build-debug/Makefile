@@ -125,86 +125,59 @@ POO_II_BattleShip/fast:
 	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/build
 .PHONY : POO_II_BattleShip/fast
 
-Alonso_Pruebas/Player.obj: Alonso_Pruebas/Player.cpp.obj
+Alonso_Pruebas/Controller.obj: Alonso_Pruebas/Controller.cpp.obj
 
-.PHONY : Alonso_Pruebas/Player.obj
-
-# target to build an object file
-Alonso_Pruebas/Player.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.obj
-.PHONY : Alonso_Pruebas/Player.cpp.obj
-
-Alonso_Pruebas/Player.i: Alonso_Pruebas/Player.cpp.i
-
-.PHONY : Alonso_Pruebas/Player.i
-
-# target to preprocess a source file
-Alonso_Pruebas/Player.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.i
-.PHONY : Alonso_Pruebas/Player.cpp.i
-
-Alonso_Pruebas/Player.s: Alonso_Pruebas/Player.cpp.s
-
-.PHONY : Alonso_Pruebas/Player.s
-
-# target to generate assembly for a file
-Alonso_Pruebas/Player.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Player.cpp.s
-.PHONY : Alonso_Pruebas/Player.cpp.s
-
-BattleShip_Pruebas/server.obj: BattleShip_Pruebas/server.cpp.obj
-
-.PHONY : BattleShip_Pruebas/server.obj
+.PHONY : Alonso_Pruebas/Controller.obj
 
 # target to build an object file
-BattleShip_Pruebas/server.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.obj
-.PHONY : BattleShip_Pruebas/server.cpp.obj
+Alonso_Pruebas/Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Controller.cpp.obj
+.PHONY : Alonso_Pruebas/Controller.cpp.obj
 
-BattleShip_Pruebas/server.i: BattleShip_Pruebas/server.cpp.i
+Alonso_Pruebas/Controller.i: Alonso_Pruebas/Controller.cpp.i
 
-.PHONY : BattleShip_Pruebas/server.i
+.PHONY : Alonso_Pruebas/Controller.i
 
 # target to preprocess a source file
-BattleShip_Pruebas/server.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.i
-.PHONY : BattleShip_Pruebas/server.cpp.i
+Alonso_Pruebas/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Controller.cpp.i
+.PHONY : Alonso_Pruebas/Controller.cpp.i
 
-BattleShip_Pruebas/server.s: BattleShip_Pruebas/server.cpp.s
+Alonso_Pruebas/Controller.s: Alonso_Pruebas/Controller.cpp.s
 
-.PHONY : BattleShip_Pruebas/server.s
+.PHONY : Alonso_Pruebas/Controller.s
 
 # target to generate assembly for a file
-BattleShip_Pruebas/server.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/BattleShip_Pruebas/server.cpp.s
-.PHONY : BattleShip_Pruebas/server.cpp.s
+Alonso_Pruebas/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/Controller.cpp.s
+.PHONY : Alonso_Pruebas/Controller.cpp.s
 
-main.obj: main.cpp.obj
+Alonso_Pruebas/main.obj: Alonso_Pruebas/main.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Alonso_Pruebas/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Alonso_Pruebas/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.obj
+.PHONY : Alonso_Pruebas/main.cpp.obj
 
-main.i: main.cpp.i
+Alonso_Pruebas/main.i: Alonso_Pruebas/main.cpp.i
 
-.PHONY : main.i
+.PHONY : Alonso_Pruebas/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/main.cpp.i
-.PHONY : main.cpp.i
+Alonso_Pruebas/main.cpp.i:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.i
+.PHONY : Alonso_Pruebas/main.cpp.i
 
-main.s: main.cpp.s
+Alonso_Pruebas/main.s: Alonso_Pruebas/main.cpp.s
 
-.PHONY : main.s
+.PHONY : Alonso_Pruebas/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/main.cpp.s
-.PHONY : main.cpp.s
+Alonso_Pruebas/main.cpp.s:
+	$(MAKE) -f CMakeFiles\POO_II_BattleShip.dir\build.make CMakeFiles/POO_II_BattleShip.dir/Alonso_Pruebas/main.cpp.s
+.PHONY : Alonso_Pruebas/main.cpp.s
 
 # Help Target
 help:
@@ -215,15 +188,12 @@ help:
 	@echo ... POO_II_BattleShip
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Alonso_Pruebas/Player.obj
-	@echo ... Alonso_Pruebas/Player.i
-	@echo ... Alonso_Pruebas/Player.s
-	@echo ... BattleShip_Pruebas/server.obj
-	@echo ... BattleShip_Pruebas/server.i
-	@echo ... BattleShip_Pruebas/server.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Alonso_Pruebas/Controller.obj
+	@echo ... Alonso_Pruebas/Controller.i
+	@echo ... Alonso_Pruebas/Controller.s
+	@echo ... Alonso_Pruebas/main.obj
+	@echo ... Alonso_Pruebas/main.i
+	@echo ... Alonso_Pruebas/main.s
 .PHONY : help
 
 
