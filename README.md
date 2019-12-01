@@ -77,7 +77,7 @@ public:
 - **random_nave:** Genera una nave aleatoria.
 
 ## Funciones extra
-- **push****_****statement:** este se encarga de dar la siguiente *acción* y guardar el *token*.
+- **push_statement:** este se encarga de dar la siguiente *acción* y guardar el *token*.
 
 ## Operaciones del código
 - [x] Leída de archivos guardados por el servidor
