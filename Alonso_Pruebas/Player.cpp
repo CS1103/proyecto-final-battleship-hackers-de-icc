@@ -55,7 +55,7 @@ void Controller::load_tokens()
     std::error_code e;
     while (true) {
         try {
-            filesystem::directory_iterator first_{ players->get_path() / "out" };
+            filesystem::directory_iterator first_{ players->path / "out" };
             while (first_ != end_) {
                 if (first_ != end_) {
                     statements_.push({ 0, push_statement(*first_) });
