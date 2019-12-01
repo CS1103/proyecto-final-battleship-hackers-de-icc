@@ -72,9 +72,9 @@ public:
 ```
 
 ## Funciones de aleatoriedad
-- **random****_****name:** Genera el nombre aleatorio para el *HANDSHAKE*.
-- **random****_****location:** Genera una posicion aleatoria.
-- **random****_****nave:** Genera una nave aleatoria.
+- **random_name:** Genera el nombre aleatorio para el *HANDSHAKE*.
+- **random_location:** Genera una posicion aleatoria.
+- **random_nave:** Genera una nave aleatoria.
 
 ## Funciones extra
 - **push****_****statement:** este se encarga de dar la siguiente *acción* y guardar el *token*.
@@ -85,6 +85,11 @@ public:
 - [x] Registro del equipo
 - [x] Construcción de la flota
 - [x] Ataque a la flota enemiga
+
+## Compilador
+```
+g++ -lpthread *cpp -std=c++17 -lstdc++fs
+```
 
 ## Hackers de ICC
 
