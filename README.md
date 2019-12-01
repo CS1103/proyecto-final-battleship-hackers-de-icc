@@ -6,16 +6,16 @@
 |Mauricio Rodriguez|201810642|[mauricio-rodriguez](https://github.com/mauricio-rodriguez)
 
 
-#El Proyecto battleship implementa una comunicación entre el jugador y el servidor. 
+# El Proyecto battleship implementa una comunicación entre el jugador y el servidor. 
 Nuestro programa lee los archivos que nos envía el servidor y el servidor lee los nuestros. Mediante algo similar 
 a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protocolo y status.
-##*Las clases o archivos con los que contamos son*
+## *Las clases o archivos con los que contamos son*
 1. Flota
 2. Nave
 3. Controller 
 4. Player 
 
-###Donde
+### Donde
 La clase nave(Que de hecho podria ser un struct) que contiene la orientacion y la posicion(pair) de la nave que vayamos a escoger,
 al igual que su respectivo id.
 ```c++
@@ -68,7 +68,7 @@ Se apoya de las funciones globales en el archivo
 * random_location -- Genera una posicion aleatoria
 * random_nave -- Genera una nave con una posicion aleatoria
 
-###La función global de mayor importancia es push_statement
+### La función global de mayor importancia es push_statement
 Es esta función la que permite al player tomar las acciones ya
 mencionadas en base 
 a los datos obtenidos del server
