@@ -4,6 +4,8 @@
 |-----------|------|---|
 |Alonso Barrios|201810483|[alonso1311](https://github.com/alonso1311)
 |Mauricio Rodriguez|201810642|[mauricio-rodriguez](https://github.com/mauricio-rodriguez)
+
+
 #El Proyecto battleship implementa una comunicación entre el jugador y el servidor. 
 Nuestro programa lee los archivos que nos envía el servidor y el servidor lee los nuestros. Mediante algo similar 
 a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protocolo y status.
@@ -12,7 +14,7 @@ a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protoco
 2. Nave
 3. Controller 
 4. Player 
-'''
+
 ###Donde
 La clase nave(Que de hecho podria ser un struct) que contiene la orientacion y la posicion(pair) de la nave que vayamos a escoger,
 al igual que su respectivo id.
