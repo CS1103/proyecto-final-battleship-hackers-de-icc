@@ -5,6 +5,13 @@
 ## Introducción 
 El juego está diseñado para jugarse entre dos personas. Se juega sobre dos tableros tridimensionales. Cada persona tiene un tablero que consiste de dos cuadrículas perpendiculares 10 x 10 con perforaciones. En una de ellas, la que queda horizontal, será su espacio naval y ahí colocará sus barcos. En la otra cuadrícula, la vertical, irá colocando marcadores que le ayudarán a ubicar la flota de su adversario. El objetivo es encontrar los barcos de tu oponente y hundir toda su flota. El primero en lograrlo ganará el juego.
 
+## Objetivos
+- Implementar los temas desarrollados durante el curso de POO II
+- Efectuar una correcta lectura y escritura sobre archivos
+- Implementar concurrencia asíncrona
+- Implementar un sistema que se asemeje a la programación reactiva
+- Desarrollar un programa que juegue en base a los elementos previos
+
 ## Nuestro programa
 Este proyecto tiene una estructura Cliente-Servidor, en este caso se programó la parte de cliente.
 Nuestro programa lee los archivos que nos envía el servidor. Mediante algo similar a mensajes de protocolo http, ambos se relacionan a traves de mensaje de protocolo y status.
