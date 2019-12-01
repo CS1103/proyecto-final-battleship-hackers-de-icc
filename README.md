@@ -102,6 +102,9 @@ g++ -lpthread *cpp -std=c++17 -lstdc++fs
 - Nuestro programa se basó en el código que  se nos fue entregado, a fin de no empezar de cero.
 - La falta de tiempo no permitió implementar una mejor lógica para el ataque, restringiéndonos a atacar de forma aleatoria.
 
+## Link del video
+[Proyecto-POO II-BattleShip-Video](https://youtu.be/fa_Vds2A7Yo)
+
 ## Hackers de ICC
 
 |Integrantes|Código|URI|
